@@ -28,6 +28,7 @@ graph TD
     
     Tipos --> O1N[O n log n: Linearitmica]
     O1N --> O1NDesc[Divide em partes e junta ordenadamente]
-    
+
+    - [Algoritmos de Busca](./busca.md)
     Tipos --> O2n[O 2n: Exponencial]
     O2n --> O2nDesc[O trabalho dobra a cada novo elemento]
