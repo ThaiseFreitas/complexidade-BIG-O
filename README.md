@@ -1,6 +1,6 @@
 # Estrutura de Dados e Algoritmos
 
-## [Ir para Algoritmos de Busca](./busca.md)
+## [Ir para o Mapa de Busca](#busca)
 
 ```mermaid
 graph TD
