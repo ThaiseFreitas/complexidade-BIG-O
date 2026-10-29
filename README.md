@@ -1,6 +1,6 @@
 # Estrutura de Dados e Algoritmos
 
-## [Ir para o Mapa de Busca](#busca)
+## [Ir para o Mapa de Busca](https://github.com/ThaiseFreitas/BUSCA#mapa-de-busca)
 
 ```mermaid
 graph TD
