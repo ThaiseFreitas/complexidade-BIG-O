@@ -1,0 +1,33 @@
+# Algoritmos de Busca
+
+```mermaid
+graph TD
+    Root[Algoritmos de Busca] --> Linear[Busca Linear]
+    Linear --> LConceito[Varredura sequencial item a item do inicio ao fim]
+    Linear --> LComp[Pior caso On e Melhor caso O1]
+
+    Root --> LinearOtimizada[Busca Linear Otimizada]
+    LinearOtimizada --> LOConceito[Interrompe a busca ao ultrapassar o valor em listas ordenadas]
+    LinearOtimizada --> LOComp[Pior caso On e Melhor caso O1]
+
+    Root --> Binaria[Busca Binaria]
+    Binaria --> BReq[Exige estrutura de dados previamente ordenada]
+    Binaria --> BFunc[Divisao e conquista reduzindo a busca pela metade]
+    Binaria --> BComp[O log n - Altamente eficiente]
+    Binaria --> BLimit[Incompativel com listas encadeadas sem acesso direto]
+
+    Root --> Interpolacao[Busca por Interpolacao]
+    Interpolacao --> IConceito[Estima a posicao provavel com base na distribuicao dos dados]
+
+    Root --> Dijkstra[Grafos: Dijkstra]
+    Dijkstra --> DObj[Encontra o caminho de menor custo em grafos]
+    Dijkstra --> DRest[Suporta apenas pesos nao negativos]
+
+    Root --> Bellman[Grafos: Bellman Ford]
+    Bellman --> BObj[Caminho minimo em grafos]
+    Bellman --> BDif[Suporta arestas com pesos negativos]
+
+    Root --> Hash[Hash Table]
+    Hash --> HFunc[Mapeia chave K diretamente para um indice de memoria]
+    Hash --> HColisao[Ocorre quando chaves diferentes geram o mesmo indice]
+    Hash --> HOverflow[Zona reservada para armazenar colisoes de forma sequencial]
