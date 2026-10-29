@@ -1,24 +1,36 @@
-# Complexidade Big O
-
-```mermaid
 mindmap
-  root((Complexidade Big O))
-    Conceito
-      Mede tempo e memoria conforme os dados crescem
-    Notacoes
-      Omega - Melhor caso
-      Theta - Caso medio
-      Big O - Pior caso
-    Tipos
-      O1 - Constante
-        Mesma execucao independente dos elementos
-      On - Linear
-        Cresce proporcionalmente aos dados
-      O log n - Logaritmica
-        Entrada reduzida por etapa ex arvore binaria
-      On2 - Quadratica
-        Cresce com o quadrado dos elementos
-      O n log n - Linearitmica
-        Divide em partes e junta ordenadamente
-      O 2n - Exponencial
-        O trabalho dobra a cada novo elemento
+  root((🔍 Busca))
+    ⚡ Busca Linear
+      🎯 Conceito
+        Varredura sequencial item a item do inicio ao fim
+      ⏱️ Complexidade
+        Pior caso On e Melhor caso O1
+    ⏩ Linear Otimizada
+      🎯 Conceito
+        Interrompe a busca ao ultrapassar o valor em listas ordenadas
+      ⏱️ Complexidade
+        Pior caso On e Melhor caso O1
+    🚀 Busca Binaria
+      📋 Requisito
+        Exige estrutura de dados previamente ordenada
+      ✂️ Funcionamento
+        Divisao e conquista reduzindo a busca pela metade
+      ⏱️ Complexidade
+        O log n - Altamente eficiente
+      ⚠️ Limitacao
+        Incompativel com listas encadeadas sem acesso direto
+    🎯 Interpolacao
+      💡 Conceito
+        Estima a posicao provavel com base na distribuicao
+    🕸️ Grafos
+      🗺️ Dijkstra
+        Caminho de menor custo apenas com pesos nao negativos
+      🔄 Bellman Ford
+        Caminho minimo suportando arestas com pesos negativos
+    🔑 Hash Table
+      ⚙️ Funcionamento
+        Mapeia chave K diretamente para um indice de memoria
+      💥 Colisao
+        Chaves diferentes geram o mesmo indice
+      📦 Overflow Area
+        Zona reservada para armazenar colisoes de forma sequencial
