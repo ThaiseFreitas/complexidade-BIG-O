@@ -1,41 +1,20 @@
-mindmap
-  root((Algoritmos de Busca))
-    Busca Linear
-      Conceito
-        Varredura sequencial item a item do inicio ao fim
-      Complexidade
-        Pior caso On e Melhor caso O1
-    Busca Linear Otimizada
-      Conceito
-        Interrompe a busca ao ultrapassar o valor em listas ordenadas
-      Complexidade
-        Pior caso On e Melhor caso O1
-    Busca Binaria
-      Requisito
-        Exige estrutura de dados previamente ordenada
-      Funcionamento
-        Divisao e conquista reduzindo a busca pela metade
-      Complexidade
-        O log n - Altamente eficiente
-      Limitacao
-        Incompativel com listas encadeadas sem acesso direto
-    Busca por Interpolacao
-      Conceito
-        Estima a posicao provavel com base na distribuicao
-    Grafos - Dijkstra
-      Objetivo
-        Encontra o caminho de menor custo em grafos
-      Restricao
-        Suporta apenas pesos nao negativos
-    Grafos - Bellman Ford
-      Objetivo
-        Caminho minimo em grafos
-      Diferencial
-        Suporta arestas com pesos negativos
-    Hash - Tabela de Espalhamento
-      Funcionamento
-        Mapeia uma chave K diretamente para um indice de memoria
-      Colisao
-        Ocorre quando chaves diferentes geram o mesmo indice
-      Area de Overflow
-        Zona reservada para armazenar colisoes de forma sequencial
+# Estrutura de Dados e Algoritmos
+
+---
+
+## 1. Complexidade Big O
+
+```mermaid
+graph TD
+    Root[Complexidade Big O] --> Conceito[Conceito: Mede tempo e memoria]
+    Root --> Notacoes[Notacoes]
+    Notacoes --> Omega[Omega: Melhor caso]
+    Notacoes --> Theta[Theta: Caso medio]
+    Notacoes --> BigO[Big O: Pior caso]
+    Root --> Tipos[Tipos de Complexidade]
+    Tipos --> O1[O 1: Constante]
+    Tipos --> On[O n: Linear]
+    Tipos --> OLogN[O log n: Logaritmica]
+    Tipos --> On2[O n2: Quadratica]
+    Tipos --> O1N[O n log n: Linearitmica]
+    Tipos --> O2n[O 2n: Exponencial]
