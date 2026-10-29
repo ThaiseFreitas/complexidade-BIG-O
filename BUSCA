@@ -2,32 +2,27 @@
 
 ```mermaid
 graph TD
-    Root[Algoritmos de Busca] --> Linear[Busca Linear]
-    Linear --> LConceito[Varredura sequencial item a item do inicio ao fim]
-    Linear --> LComp[Pior caso On e Melhor caso O1]
+    A[Algoritmos de Busca] --> B[Busca Linear]
+    B --> B1[Varredura sequencial item a item]
+    B --> B2[Pior O n e Melhor O 1]
 
-    Root --> LinearOtimizada[Busca Linear Otimizada]
-    LinearOtimizada --> LOConceito[Interrompe a busca ao ultrapassar o valor em listas ordenadas]
-    LinearOtimizada --> LOComp[Pior caso On e Melhor caso O1]
+    A --> C[Busca Linear Otimizada]
+    C --> C1[Interrompe ao ultrapassar o valor]
 
-    Root --> Binaria[Busca Binaria]
-    Binaria --> BReq[Exige estrutura de dados previamente ordenada]
-    Binaria --> BFunc[Divisao e conquista reduzindo a busca pela metade]
-    Binaria --> BComp[O log n - Altamente eficiente]
-    Binaria --> BLimit[Incompativel com listas encadeadas sem acesso direto]
+    A --> D[Busca Binaria]
+    D --> D1[Exige lista ordenada]
+    D --> D2[Divisao pela metade]
+    D --> D3[Complexidade O log n]
 
-    Root --> Interpolacao[Busca por Interpolacao]
-    Interpolacao --> IConceito[Estima a posicao provavel com base na distribuicao dos dados]
+    A --> E[Busca por Interpolacao]
+    E --> E1[Estima posicao por distribuicao]
 
-    Root --> Dijkstra[Grafos: Dijkstra]
-    Dijkstra --> DObj[Encontra o caminho de menor custo em grafos]
-    Dijkstra --> DRest[Suporta apenas pesos nao negativos]
+    A --> F[Grafos: Dijkstra]
+    F --> F1[Caminho de menor custo sem pesos negativos]
 
-    Root --> Bellman[Grafos: Bellman Ford]
-    Bellman --> BObj[Caminho minimo em grafos]
-    Bellman --> BDif[Suporta arestas com pesos negativos]
+    A --> G[Grafos: Bellman Ford]
+    G --> G1[Caminho minimo com pesos negativos]
 
-    Root --> Hash[Hash Table]
-    Hash --> HFunc[Mapeia chave K diretamente para um indice de memoria]
-    Hash --> HColisao[Ocorre quando chaves diferentes geram o mesmo indice]
-    Hash --> HOverflow[Zona reservada para armazenar colisoes de forma sequencial]
+    A --> H[Hash Table]
+    H --> H1[Mapeia chave para indice]
+    H --> H2[Tratamento de colisoes]
