@@ -1,6 +1,6 @@
 # Estrutura de Dados e Algoritmos
 
-## Complexidade Big O
+## [Ir para Algoritmos de Busca](./busca.md)
 
 ```mermaid
 graph TD
