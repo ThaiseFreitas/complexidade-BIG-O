@@ -18,7 +18,7 @@ graph TD
     E --> E1[Estima posicao por distribuicao]
 
     A --> F[Grafos: Dijkstra]
-    F --> F1[Caminho de menor custo sem pesos negativos]
+    F --> F1[Caminho de menor custo]
 
     A --> G[Grafos: Bellman Ford]
     G --> G1[Caminho minimo com pesos negativos]
